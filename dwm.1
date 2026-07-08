@@ -56,41 +56,44 @@ Close focused window.
 .TP
 .B Super\-w
 Start browser,
-.BR Firefox(1).
+.BR Firefox.
 .TP
 .B Super\-e
 Start graphical file manager,
-.BR Dolphin(1).
+.BR Dolphin.
 .TP
 .B Super\-r
 Spawn
-.BR dmenu(1)
+.BR dmenu (1)
 for launching other programs.
 .TP
 .B Super\-t
 Start terminal,
-.BR st(1).
+.BR st (1)
+.
 .TP
 .B Super\-Shift\-t
 Toggle scratch terminal,
-.BR st(1).
+.BR st (1)
+.
 .TP
 .B Super\-y
 Toggle smart gaps.
 .TP
-.B Super\-u
-Decrease number of windows in master area.
+.B Super\-u/i
+Decrease/increase number of windows in master area.
 .TP
 .B Super\-i
 Increase number of windows in master area.
 .TP
 .B Super\-o
 Start terminal file manager,
-.BR lf(1).
+.BR lf (1)
+.
 .TP
 .B Super\-p
 Start browser,
-.BR Firefox(1)
+.BR Firefox
 in private window.
 .TP
 .B Super\-Shift\-p
@@ -158,11 +161,18 @@ Toggles bar on and off.
 .TP
 .B Super\-n
 Start
-.BR WeeChat(1).
+.BR nvim (1)
+.
+.TP
+.B Super\-Shift\-n
+Start
+.BR weechat (1)
+.
 .TP
 .B Super\-m
 Start
-.BR ncmpcpp(1).
+.BR ncmpcpp (1)
+.
 .TP
 .B Super\-Shift\-m
 Mute audio.
@@ -178,6 +188,9 @@ Apply all tags to focused window.
 .TP
 .B Alt\-Tab
 Cycle between windows.
+.TP
+.B Super\-Space
+Select a directory to open in a terminal, file manager, editor, or file browser.
 .TP
 .B Printscreen
 Take a screenshot of the selected area (also copies to your clipboard).
@@ -211,6 +224,9 @@ Toggle VPN.
 .TP
 .B Super\-Backspace
 Refresh/quit/reboot/shutdown etc.
+.TP
+.B Super\-Shift\-Backspace
+Refresh/quit/reboot/shutdown etc with a delay.
 .TP
 .B Super\-[1..8]
 View all windows with tag.
