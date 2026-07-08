@@ -211,6 +211,7 @@ static const Key keys[] = {
     {MODKEY, XK_F5, xrdb, {.v = NULL}},
     {MODKEY, XK_F6, spawn, {.v = (const char *[]){"toggle-vpn.sh", NULL}}},
     {MODKEY, XK_BackSpace, spawn, {.v = (const char *[]){"sysact", NULL}}},
+    {MODKEY | ShiftMask, XK_BackSpace, spawn, {.v = (const char *[]){"sysact", "delay", NULL}}},
 
     /* function/laptop keys*/
     {0, XF86XK_AudioMute, spawn, SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof dwmblocks)")},
