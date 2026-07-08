@@ -2246,7 +2246,6 @@ void drawTab(int nwins, int first, Monitor *m)
     h = selmon->maxHTab / m->nTabs;
 
     int y = 0;
-    int n = 0;
     for (int i = 0; i < m->nTabs; i++)
     { /* draw all clients into tabwin */
         c = m->altsnext[i];
@@ -2254,7 +2253,6 @@ void drawTab(int nwins, int first, Monitor *m)
             continue;
         /* if (HIDDEN(c)) continue; uncomment if you're using awesomebar patch */
 
-        n++;
         drw_setscheme(drw, scheme[(c == m->sel) ? SchemeSel : SchemeNorm]);
         drw_text(drw, 0, y, selmon->maxWTab, h, 0, c->name, 0);
         y += h;
