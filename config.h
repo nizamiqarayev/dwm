@@ -54,7 +54,7 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = {"k", "u", "r", "o", "n", "e", "k", "o"};
+static const char *tags[] = {"b", "i", "g", "p", "e", "n", "g", "u", "s"};
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -147,6 +147,7 @@ static const Key keys[] = {
                         TAGKEYS(XK_6, 5)
                             TAGKEYS(XK_7, 6)
                                 TAGKEYS(XK_8, 7)
+                                    TAGKEYS(XK_9, 8)
     {MODKEY, XK_Tab, viewnext, {0}},
     {MODKEY | ShiftMask, XK_Tab, viewprev, {0}},
     /* keys set by me*/
